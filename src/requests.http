@@ -1,0 +1,15 @@
+@url = http://localhost:3001
+
+### List all messages
+GET {{url}}/messages
+
+### Create a new message
+POST {{url}}/messages
+content-type: application/json
+
+{
+    "content": "qqqqqqq"
+}
+
+### Get a particular message
+GET {{url}}/messages/30
